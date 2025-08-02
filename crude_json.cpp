@@ -9,14 +9,16 @@
 //
 // CREDITS
 //   Written by Michal Cichon
-# include "crude_json.h"
-# include <iomanip>
-# include <limits>
-# include <cstdlib>
-# include <clocale>
-# include <cmath>
-# include <cstring>
-# if CRUDE_JSON_IO
+#include "crude_json.h"
+
+#include <clocale>
+#include <cmath>
+#include <cstdlib>
+#include <cstring>
+#include <exception>
+#include <iomanip>
+#include <limits>
+#if CRUDE_JSON_IO
 #     include <stdio.h>
 #     include <memory>
 # endif
